@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  /* border: 2px solid red; */
+  height: 100vh;
+  width: 100%;
+  justify-items: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #ccbdb7;
+}
+.card {
+  /* border: 2px solid green; */
+  /* position: absolute; */
+  /* left: 40%; */
+  height: 345px;
+  width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+  box-shadow: -30px -20px #c4aea7;
+  background-color: #ede9e2;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px soild red; */
+  /* padding: 20px; */
+}
+.heading {
+  /* display: flex; */
+  margin-top: 20px;
+}
+.paragraph {
+  margin-top: 10px;
+}
+
+.numbers {
+  position: relative;
+  display: flex;
+  /* border: 2px solid red; */
+  height: 70px;
+  width: 200px;
+  /* margin-top: 20px; */
+  padding-top: 20px;
+  font-weight: bold;
+}
+.members {
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  /* top: 20px; */
+}
+small {
+  font-weight: 500;
+}
+.online {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  /* position: absolute; */
+  /* top: 20px; */
+  /* left: 90px; */
+}
+.btn {
+  /* position: absolute; */
+  /* border: 2px solid green; */
+  /* bottom: 85px; */
+  /* height: 40px; */
+  /* padding: 20px; */
+  width: 200px;
+  padding-top: 10px;
+  display: flex;
+}
+button {
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.post {
+  margin-left: 20px;
+}
+
+.small {
+  /* position: absolute; */
+  /* bottom: 30px; */
+  padding-top: 20px;
+}
