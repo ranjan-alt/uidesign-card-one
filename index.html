@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <a href="https://www.youtube.com/watch?v=a6XIMIKmj9k"></a>
     <div class="container">
       <div class="card">
         <div class="header">
@@ -24,11 +25,11 @@
         </div>
         <div class="numbers">
           <div class="members">
-            <span>13.5K</span>
+            <span class="counter" data-target="900000">0</span>
             <small>Members</small>
           </div>
           <div class="online">
-            <span>47</span>
+            <span class="counter" data-target="1000000">0</span>
             <small>Online</small>
           </div>
         </div>
@@ -41,5 +42,27 @@
         </div>
       </div>
     </div>
+    <script>
+      const counters = document.querySelectorAll(".counter");
+      const speed = 200;
+      counters.forEach((counter) => {
+        // console.log(counter);
+        const updateCounter = () => {
+          const target = +counter.getAttribute("data-target");
+          // console.log(typeof target);
+          const count = +counter.innerText;
+          // console.log(count);
+          const increment = target / speed;
+          // console.log(increment);
+          if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCounter, 1);
+          } else {
+            count.innerText = target;
+          }
+        };
+        updateCounter();
+      });
+    </script>
   </body>
 </html>
